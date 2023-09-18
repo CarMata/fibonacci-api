@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILE_ACTIVE:dev}
+  application:
+    name: fibonacci-api
+server:
+  port: ${APP_PORT:8085}
+  servlet:
+    context-path: /api/v1
+springdoc:
+  swagger-ui:
+    enabled: true
+    
+logging:
+  level:
+    web: TRACE
